@@ -17,7 +17,7 @@
   <hr style="border: none; height: 2px; background-color: gray; width: 75%;">
   <h2>How to fetch JSON file:</h2>
   <pre><code class="language-javascript">
-    fetch('https//fetch-me.netlify.app/hello-world.json')
+    fetch('https//fetch-me.netlify.app/resources/hello-world.json')
       .then(response => response.json())
       .then(response => {
         console.log(response["text"]);
@@ -31,7 +31,7 @@
   <br>
   <h2>How to fetch txt file:</h2>
   <pre><code class="language-javascript">
-    fetch('https//fetch-me.netlify.app/hello-world.txt')
+    fetch('https//fetch-me.netlify.app/resources/hello-world.txt')
       .then(response => response.text())
       .then(response => {
         console.log(response);
