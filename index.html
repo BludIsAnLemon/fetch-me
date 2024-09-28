@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fetch Me</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+</head>
+
+<body>
+  <h1><img id="inlineIMG" src="img/favicon.png">Fetch Me</h1>
+  <p>What is this website for? I don't know.</p>
+  <div id="mainContent">
+    <div id="contentBox">
+      <h3 id="json">JSON Data</h3>
+      <button id="jsonButton" onclick="copyText('https://bludisanlemon.github.io/fetch-me/hello-world.json')">Copy URL</button>
+    </div>
+    <div id="contentBox">
+      <h3 id="txt">.txt Data</h3>
+      <button id="txtButton" onclick="copyText('https://bludisanlemon.github.io/fetch-me/hello-world.txt')">Copy URL</button>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
