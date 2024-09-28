@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fetch Me</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
+</head>
+
+<body>
+  <a href="https://fetch-me.netlify.app/" style="text-decoration: none; color: black"><h1><img id="inlineIMG" src="img/favicon.png">Fetch Me</h1></a>
+  <h2>Documentation</h2>
+  <h2>Fetch Me is a website with different types of files you can fetch. These include: JSON, and txt files.</h2>
+  <hr style="border: none; height: 2px; background-color: gray; width: 75%;">
+  <h2>How to fetch JSON file:</h2>
+  <pre><code class="language-javascript">
+    fetch('https//fetch-me.netlify.app/hello-world.json')
+      .then(response => response.json())
+      .then(response => {
+        console.log(response["text"]);
+      })
+      .catch(error => {
+        console.error(error);
+      })
+  </code></pre>
+  <br>
+  <hr style="border: none; height: 2px; background-color: gray; width: 75%;">
+  <br>
+  <h2>How to fetch txt file:</h2>
+  <pre><code class="language-javascript">
+    fetch('https//fetch-me.netlify.app/hello-world.txt')
+      .then(response => response.text())
+      .then(response => {
+        console.log(response);
+      })
+      .catch(error => {
+        console.error(error);
+      })
+  </code></pre>
+  <script src="main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+</body>
+</html>
