@@ -10,7 +10,7 @@
     <meta content="Fetch Me" property="og:title" />
 <meta content="Fetch Me is a website with different types of files you can fetch. These include: JSON, md, and txt files." property="og:description" />
 <meta content="https://fetch-me.netlify.app/" property="og:url" />
-<meta content="https://drive.google.com/uc?id=1u1bqp2ejwfyoIzEizozLk8wILSuf8E5e" property="og:image" />
+<meta content="https://drive.google.com/file/d/1u1bqp2ejwfyoIzEizozLk8wILSuf8E5e/view?usp=drivesdk" property="og:image" />
 <meta content="#4C9A34" data-react-helmet="true" name="theme-color" />
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -28,10 +28,15 @@
       <button id="txtButton" onclick="copyText('https://fetch-me.netlify.app/hello-world.txt')">Copy URL</button>
     </div>
     <div id="contentBox">
-      <h3 id="txt">.md Data</h3>
-      <button id="mdButton" onclick="copyText('https://fetch-me.netlify.app/resources/hello-world.md')">Copy URL</button>
+      <h3 id="md">.md Data</h3>
+      <button id="mdButton" onclick="copyText('https://fetch-me.netlify.app/hello-world.md')">Copy URL</button>
+    </div>
+    <div id="contentBox">
+      <h3 id="png">PNG</h3>
+      <button id="pngButton" onclick="copyText('https://fetch-me.netlify.app/hello-world.png')">Copy URL</button>
     </div>
   </div>
+  <a href="documentation.html">Go to Documentation</a>
   <script src="main.js"></script>
 </body>
 </html>
