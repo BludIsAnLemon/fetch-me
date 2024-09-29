@@ -8,12 +8,13 @@
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
+  <link rel="stylesheet" href="https://bludisanlemon.github.io/terminal.css/terminal.css">
   <meta content="Fetch Me" property="og:title" />
-<meta content="Fetch Me is a website with different types of files you can fetch. These include: JSON, md, and txt files." property="og:description" />
-<meta content="https://fetch-me.netlify.app/documentation/" property="og:url" />
-<meta content="https://drive.google.com/uc?id=1u1bqp2ejwfyoIzEizozLk8wILSuf8E5e" property="og:image" />
-<meta content="#4C9A34" data-react-helmet="true" name="theme-color" />
-<meta name="twitter:card" content="summary_large_image">
+  <meta content="Fetch Me is a website with different types of files you can fetch. These include: JSON, and txt files." property="og:description" />
+  <meta content="https://fetch-me.netlify.app/documentation/" property="og:url" />
+  <meta content="https://drive.google.com/file/d/1u1bqp2ejwfyoIzEizozLk8wILSuf8E5e/view?usp=drivesdk" property="og:image" />
+  <meta content="#4C9A34" data-react-helmet="true" name="theme-color" />
+  <meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body>
@@ -32,6 +33,12 @@
         console.error(error);
       })
   </code></pre>
+  <p>This will output:</p>
+  <br>
+  <div class="terminal">
+    <div class="terminal-bar"><p>Terminal</p></div>
+    <div class="terminal-content">Hello, world!</div>
+  </div>
   <br>
   <hr style="border: none; height: 2px; background-color: gray; width: 75%;">
   <br>
@@ -45,6 +52,20 @@
       .catch(error => {
         console.error(error);
       })
+  </code></pre>
+  <p>This will output:</p>
+  <br>
+  <div class="terminal">
+    <div class="terminal-bar"><p>Terminal</p></div>
+    <div class="terminal-content">Hello, world!</div>
+  </div>
+  <hr style="border: none; height: 2px; background-color: gray; width: 75%;">
+  <br>
+  <h2>How to fetch (kinda?) png file:</h2>
+  <pre><code class="language-javascript">
+    const myImg = document.createElement("img");
+    myImg.src = "https://fetch-me.netlify.app/hello-world.png";
+    document.body.appendChild(myImg);
   </code></pre>
   <script src="main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
