@@ -13,6 +13,7 @@
 <meta content="https://drive.google.com/uc?id=1u1bqp2ejwfyoIzEizozLk8wILSuf8E5e" property="og:image" />
 <meta content="#4C9A34" data-react-helmet="true" name="theme-color" />
 <meta name="twitter:card" content="summary_large_image">
+<script src="https://kit.fontawesome.com/5e2b0213ae.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -21,22 +22,24 @@
   <div id="mainContent">
     <div id="contentBox">
       <h3 id="json">JSON Data</h3>
-      <button id="jsonButton" onclick="copyText('https://fetch-me.netlify.app/hello-world.json')">Copy URL</button>
+      <button id="jsonButton" onclick="copyText('https://fetch-me.netlify.app/hello-world.json')"><i class="fa-solid fa-copy"></i> Copy URL</button>
     </div>
     <div id="contentBox">
       <h3 id="txt">.txt Data</h3>
-      <button id="txtButton" onclick="copyText('https://fetch-me.netlify.app/resources/hello-world.txt')">Copy URL</button>
+      <button id="txtButton" onclick="copyText('https://fetch-me.netlify.app/hello-world.txt')"><i class="fa-solid fa-copy"></i> Copy URL</button>
     </div>
     <div id="contentBox">
       <h3 id="md">.md Data</h3>
-      <button id="mdButton" onclick="copyText('https://fetch-me.netlify.app/resources/hello-world.md')">Copy URL</button>
+      <button id="mdButton" onclick="copyText('https://fetch-me.netlify.app/hello-world.md')"><i class="fa-solid fa-copy"></i> Copy URL</button>
     </div>
     <div id="contentBox">
       <h3 id="png">PNG</h3>
-      <button id="pngButton" onclick="copyText('https://fetch-me.netlify.app/resources/hello-world.png')">Copy URL</button>
+      <button id="pngButton" onclick="copyText('https://fetch-me.netlify.app/hello-world.png')"><i class="fa-solid fa-copy"></i> Copy URL</button>
     </div>
   </div>
-  <a href="documentation.html">Go to Documentation</a>
+  <a href="documentation.html"><i class="fa-solid fa-file"></i> Go to Documentation</a>
+  <br>
+  <a href="https://github.com/BludIsAnLemon/fetch-me" style="text-decoration: none; color: black;"><i class="fa-brands fa-github"></i> View the repository on GitHub!</a>
   <script src="main.js"></script>
 </body>
 </html>
